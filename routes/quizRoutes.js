@@ -2,8 +2,6 @@ const express = require('express');
 const Router = express.Router();
 const verifyToken = require('../middleware/authMiddleware');
 
-const { getQuizResults } = require('../controllers/resultController');
-
 const {createQuizWithQuestions, getQuizzes, getQuizById, submitQuiz  } = require('../controllers/quizController');
 
 Router.post('/createquize', createQuizWithQuestions);

@@ -10,6 +10,5 @@ Router.post('/createquize', createQuizWithQuestions);
 Router.get('/quizzes', getQuizzes);
 Router.get('/quiz/:quizId', getQuizById);
 Router.post('/submit', submitQuiz);
-Router.get('/results/:userId', verifyToken, getQuizResults);
 
 module.exports = Router;
